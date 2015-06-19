@@ -1,0 +1,211 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger has Layout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/fondo.jpg");
+	background-position: center;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-weight: 400;
+}
+
+.areaDatos {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	border-bottom: 3px dotted #ffffff;
+}
+
+.relleno {
+	width: 100%;
+	height: 138px;
+	margin: 0;
+	padding: 0;
+}
+
+.areaFormacion {
+	background-color: rgba(38, 242, 170, 0.9);
+	margin: 0;
+	padding: 0;
+	color: #006F5B;
+	position: relative;
+	top: 138px;
+}
+
+.areaPortfolio {
+	background-color: rgba(0, 0, 0, 0.9);
+	margin: 0;
+	padding: 0;
+	color: #24DD99;
+}
+
+.areaHobby {
+	background-color: rgba(38, 242, 170, 0.9);
+	margin: 0;
+	padding: 0;
+	color: #006F5B;
+}
+
+.contenido {
+	width: 960px;
+	margin: 0px auto;
+}
+
+.areaDatos .foto {
+	float: left;
+	width: 16%;
+}
+
+.areaDatos .foto img {
+	width: 100%;
+	border: 2px solid #ffffff;
+	-webkit-border-radius: 100%;
+	border-radius: 50%;
+	margin: 3px;
+}
+
+.areaDatos .datos {
+	float: right;
+	width: 78%;
+	color: #eeeeee;
+	margin: 10px 0px;
+	text-align: left;
+}
+
+.areaDatos .datos a {
+	color: #995522;
+	text-decoration: none;
+}
+
+.areaDatos .datos a:hover {
+	color: #996633;
+}
+
+.areaDatos .datos h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 52px;
+	font-weight: 100;
+	letter-spacing: 10px;
+}
+
+.areaDatos .datos h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	letter-spacing: 4px;
+}
+
+.areaDatos .datos span {
+	font-size: 20px;
+}
+
+.formacion {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 5px;
+}
+
+.areaFormacion h1, .areaPortfolio h1, .areaHobby h1 {
+	font-size: 52px;
+	font-weight: 200;
+}
+
+.areaFormacion hr {
+	border: 1px solid #000000;
+	height: 0px;
+	width: 100%;
+}
+
+.formacion h3 {
+	font-size: 32px;
+	text-decoration: underline;
+	font-variant: small-caps;
+}
+
+.formacion span {
+	letter-spacing: 3px;
+}
+
+.formacion .foto {
+	width: 27%;
+	float: left;
+}
+
+.formacion .foto img {
+	width: 100%;
+	height: 250px;
+	border: 2px solid green;
+	-webkit-border-radius: 100%;
+	border-radius: 50%;
+}
+
+.formacion .foto a:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.formacion .datos {
+	margin: 0px;
+	text-align: justify;
+	float: right;
+	width: 68%;
+	text-align: left;
+}
+
+.portfolio {
+	width: 23%;
+	background-color: rgba(80, 80, 80, 0.42);
+	float: left;
+	text-align: justify;
+	border: 1px solid;
+	margin-bottom: 50px;
+}
+
+.portfolio {
+	margin-right: 1%;
+	padding: 5px;
+}
+
+.portfolio:last-child {
+	margin-right: 0px;
+}
+
+.portfolio img {
+	width: 99%;
+	height: 220px;
+	border: 1px solid;
+	-webkit-border-radius: 100%;
+	border-radius: 50%;
+}
+
+.portfolio h3 {
+	text-align: center;
+}
+
+.portfolio p {
+	margin: 0 auto;
+	width: 80%;
+}
